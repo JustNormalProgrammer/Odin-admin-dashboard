@@ -11,7 +11,7 @@ ul{
 }
 .container{
     display: grid;
-    grid-template-columns: 1f 4fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
 .search input{
@@ -36,14 +36,42 @@ ul{
     grid-area: 1/2/1/3;
 }
 section.left-toc{
-    grid-area: 1/1/2/1;
-    background-color: #38bdf8;
+    grid-area: 1/1/3/1;
+    background-color: #0ea5e9;
 }
-.logo-aside, .nav-icon{
+.logo-aside, .nav-icon, .nav-text{
     filter: invert(100%) sepia(20%) saturate(3616%) hue-rotate(176deg) brightness(102%) contrast(103%);
+}
+.logo-aside, .aside-group-nav {
+    margin: 30px;
+}
+.logo-aside, .nav-item{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap: 10px;
+    justify-items: left;
 } 
+.nav-item{
+    margin-left: 16px;
+    gap: 30px;
+}
+#main-name{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.nav-text{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.aside-group-nav ul {
+    margin-top: 50px;
+}
+.aside-group-nav ul>li {
+    margin-top: 25px;
+}
 main{
-    grid-area: 2/1/2/2;
+    grid-area: 2/2/3/3;
 }
 .left-toc h1{
     color: #f0f9ff
