@@ -21,6 +21,8 @@ ul{
     height: 40px;
     background-color: #eeeff3;
     border-width: 0;
+    font-size: 1.4rem;
+    padding: 5px;
 }
 .search input:focus{
     filter: brightness(95%);
@@ -139,7 +141,9 @@ main{
     grid-area: 2/2/3/3;
     background-color: #eeeff3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 2fr;
+    padding: 0 35px;
+    gap: 15px;
 }
 .left-toc h1{
     color: #f0f9ff;
@@ -147,14 +151,14 @@ main{
 .card-list{
     grid-column: 1/1;
     display: grid;
+    height: 90%;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.card-list, .sub-main{
-    margin: 0 35px;
-}
+
 .sub-main{
     grid-column: 2/3;
+    height: 100%;
 }
 .anc-list, .trnd-list{
     background-color: white;
@@ -166,8 +170,8 @@ main{
     border-bottom: 1px solid rgb(189, 189, 189);
 }
 .card-item{
-    height:200px;
-    width: 400px;
+    height:280px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     border-left: 8px solid orange;
