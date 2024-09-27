@@ -19,7 +19,7 @@ ul{
     border-radius:20px;
     width: 800px;
     height: 40px;
-    background-color: #e0f2fe;
+    background-color: #eeeff3;
     border-width: 0;
 }
 .search input:focus{
@@ -137,8 +137,28 @@ section.left-toc{
 }
 main{
     grid-area: 2/2/3/3;
+    background-color: #eeeff3;
 }
 .left-toc h1{
     color: #f0f9ff;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.card-list{
+    grid-column: 1/1;
+}
+.card-list, .sub-main{
+    margin: 0 35px;
+}
+.anc-list, .trnd-list{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px
+}
+.info:nth-child(2), .trending-elm:nth-child(2){
+    border-top: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid rgb(189, 189, 189);
 }
 
